@@ -97,8 +97,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="MasterPages\themes-dist-6.0-gcweb\ajax\footer-brand-en.html" />
+    <Content Include="MasterPages\themes-dist-6.0-gcweb\ajax\footer-brand-fr.html" />
+    <Content Include="MasterPages\themes-dist-6.0-gcweb\ajax\footer-info-en.html" />
+    <Content Include="MasterPages\themes-dist-6.0-gcweb\ajax\footer-info-fr.html" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -4727,10 +4730,21 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Global.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Global.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.fr.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="BasePage.cs">
+    <Compile Include="BaseConfig\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="BaseConfig\BaseConfiguration.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4738,10 +4752,10 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GCWebConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MasterPages\GCWebMaster.Master.cs">
       <DependentUpon>GCWebMaster.Master</DependentUpon>
@@ -4755,6 +4769,11 @@
     <Content Include="MasterPages\App_LocalResources\GCWebMaster.Master.resx" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Global.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Global.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\demos\data-json\demo\data-en.json" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\demos\data-json\demo\data-fr.json" />
@@ -5042,6 +5061,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPages\App_LocalResources\GCWebMaster.Master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Global.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

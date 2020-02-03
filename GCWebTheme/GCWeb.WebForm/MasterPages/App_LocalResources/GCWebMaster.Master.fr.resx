@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="test.Text" xml:space="preserve">
-    <value>&lt;object type="image/svg+xml" data="themes-dist-6.0-gcweb/GCWeb/assets/wmms-blk.svg" role="img" aria-label="Symbol of the Government of Canada"&gt;&lt;/object&gt;</value>
+  <data name="lblAboutGovernment.Text" xml:space="preserve">
+    <value>Au sujet du gouvernement</value>
+  </data>
+  <data name="lblAboutThisSite.Text" xml:space="preserve">
+    <value>À propos du site</value>
+  </data>
+  <data name="lblDateModified.Text" xml:space="preserve">
+    <value>Date de modification&amp;#160;:&amp;#32;</value>
+  </data>
+  <data name="lblLanguageSelection.Text" xml:space="preserve">
+    <value>Sélection de la langue</value>
+  </data>
+  <data name="lblSearch.Text" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="lblSearchCanada.Text" xml:space="preserve">
+    <value>Rechercher dans Canada.ca</value>
+  </data>
+  <data name="lblTopOfPage.Text" xml:space="preserve">
+    <value>Haut de la page&amp;#32;</value>
+  </data>
+  <data name="lblYouAreHere.Text" xml:space="preserve">
+    <value>Vous êtes ici&amp;#160;:</value>
+  </data>
+  <data name="lnkLanguage.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="txtSearch.Placeholder" xml:space="preserve">
+    <value>Rechercher dans Canada.ca</value>
   </data>
 </root>

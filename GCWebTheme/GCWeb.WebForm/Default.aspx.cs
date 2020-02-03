@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GCWeb.WebForm.BaseConfig;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,10 @@ namespace GCWeb.WebForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
 
+            }
         }
     }
 }

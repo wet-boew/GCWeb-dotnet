@@ -1,14 +1,14 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GCWebMaster.Master.cs" Inherits="GCWeb.WebForm.SiteMaster" %>
 
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<%=this.Language %>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="<%=this.Language %>" dir="ltr">
 <!--<![endif]-->
 <head runat="server">
     <meta charset="utf-8" />
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
     <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %></title>
 
     <!--[if gte IE 9 | !IE ]><!-->
     <link href="themes-dist-6.0-gcweb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
@@ -61,27 +61,27 @@
         <header>
             <div id="wb-bnr" class="container">
                 <section id="wb-lng" class="text-right">
-                    <h2 class="wb-inv">Language selection</h2>
+                    <h2 class="wb-inv"><asp:Label ID="lblLanguageSelection" meta:resourcekey="lblLanguageSelection" runat="server"></asp:Label></h2>
                     <ul class="list-inline margin-bottom-none">
-                        <li><a lang="fr" hreflang="fr" href="index-fr.html">Français</a></li>
+                        <li><asp:LinkButton ID="lnkLanguage" meta:resourcekey="lnkLanguage" OnClick="lnkLanguage_Click" runat="server"></asp:LinkButton></li>
                     </ul>
                 </section>
                 <div class="row">
                     <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                        <a href="https://www.canada.ca/en.html" property="url"><object type="image/svg+xml" data="./MasterPages/themes-dist-6.0-gcweb/GCWeb/assets/sig-blk-en.svg" role="img" tabindex="-1"></object><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+                        <a href="https://www.canada.ca/en.html" property="url"><object type="image/svg+xml" data="./MasterPages/themes-dist-6.0-gcweb/GCWeb/assets/sig-blk-<%=this.Language %>.svg" role="img" tabindex="-1"></object><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
                         <meta property="areaServed" typeof="Country" content="Canada">
                     </div>
                     <section id="wb-srch" class="col-lg-8 text-right">
-                        <h2>Search</h2>
+                        <h2><asp:Label ID="lblSearchTitle" meta:resourcekey="lblSearch" runat="server"></asp:Label></h2>
                         <div class="form-inline">
                             <div class="form-group">
-                                <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
-                                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+                                <label for="wb-srch-q" class="wb-inv"><asp:Label ID="lblSearchCanada" meta:resourcekey="lblSearchCanada" runat="server"></asp:Label></label>
+                                <input id="txtSearch" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" meta:resourcekey="txtSearch" runat="server">
                                 <datalist id="wb-srch-q-ac">
                                 </datalist>
                             </div>
                             <div class="form-group submit">
-                                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><asp:Label ID="lblSearch" CssClass="wb-inv" meta:resourcekey="lblSearch" runat="server"></asp:Label></button>
                             </div>
                         </div>
                     </section>
@@ -90,30 +90,14 @@
                     <div class="container">
                         <h2 class="wb-inv">Menu</h2>
                         <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-                        <ul role="menu" aria-orientation="vertical" data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/sitemenu-v5-en.html">
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
-                            <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
-                        </ul>
+                        <ul role="menu" aria-orientation="vertical" data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/sitemenu-v5-<%=this.Language %>.html"></ul>
                     </div>
                 </nav>
                 <nav id="wb-bc" property="breadcrumb">
-                    <h2>You are here:</h2>
+                    <h2><asp:Label ID="lblYouAreHere" meta:resourcekey="lblYouAreHere" runat="server"></asp:Label></h2>
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="./default.aspx">GCWeb home</a></li>
+                            <li><a href="./default.aspx">Home</a></li>
                         </ol>
                     </div>
                 </nav>
@@ -125,7 +109,7 @@
             </section>
             <div class="pagedetails container">
                 <dl id="wb-dtmd">
-                    <dt>Date modified:&#32;</dt>
+                    <dt><asp:Label ID="lblDateModified" meta:resourcekey="lblDateModified" runat="server"></asp:Label></dt>
                     <dd><time property="dateModified"><%=this.PageDateModified %></time></dd>
                 </dl>
             </div>
@@ -133,35 +117,19 @@
         <footer id="wb-info">
             <div class="landscape">
                 <nav class="container wb-navcurr">
-                    <h2 class="wb-inv">About government</h2>
-                    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-                        <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-                        <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-                        <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-                        <li><a href="https://www.canada.ca/en/news.html">News</a></li>
-                        <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-                        <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-                        <li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
-                        <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-                        <li><a href="https://open.canada.ca/en/">Open government</a></li>
-                    </ul>
+                    <h2 class="wb-inv"><asp:Label ID="lblAboutGovernment" meta:resourcekey="lblAboutGovernment" runat="server"></asp:Label></h2>
+                    <ul class="list-unstyled colcount-sm-2 colcount-md-3" data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/footer-info-<%=this.Language %>.html"></ul>
                 </nav>
             </div>
             <div class="brand">
                 <div class="container">
                     <div class="row">
                         <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
-                            <h2 class="wb-inv">About this site</h2>
-                            <ul>
-                                <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                                <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                                <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-                                <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                                <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-                            </ul>
+                            <h2 class="wb-inv"><asp:Label ID="lblAboutThisSite" meta:resourcekey="lblAboutThisSite" runat="server"></asp:Label></h2>
+                            <ul data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/footer-brand-<%=this.Language %>.html"></ul>
                         </nav>
                         <div class="col-xs-6 visible-sm visible-xs tofpg">
-                            <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                            <a href="#wb-cont"><asp:Label ID="lblTopOfPage" meta:resourcekey="lblTopOfPage" runat="server"></asp:Label><span class="glyphicon glyphicon-chevron-up"></span></a>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 text-right">
                             <object id="wmms-blk" type="image/svg+xml" data="./MasterPages/themes-dist-6.0-gcweb/GCWeb/assets/wmms-blk.svg" role="img" tabindex="-1" aria-label="Symbol of the Government of Canada"></object>
