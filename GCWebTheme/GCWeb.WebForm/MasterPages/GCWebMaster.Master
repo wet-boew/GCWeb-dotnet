@@ -86,23 +86,23 @@
                         </div>
                     </section>
                 </div>
-                <nav class="gcweb-menu" typeof="SiteNavigationElement">
-                    <div class="container">
-                        <h2 class="wb-inv">Menu</h2>
-                        <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-                        <ul role="menu" aria-orientation="vertical" data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/sitemenu-v5-<%=this.Language %>.html"></ul>
-                    </div>
-                </nav>
-                <nav id="wb-bc" property="breadcrumb">
-                    <h2><asp:Label ID="lblYouAreHere" meta:resourcekey="lblYouAreHere" runat="server"></asp:Label></h2>
-                    <div class="container">
-                        <ol class="breadcrumb">
-                            <li><a href="./default.aspx">Home</a></li>
-                        </ol>
-                    </div>
-                </nav>
             </div>
         </header>
+        <nav class="gcweb-menu" typeof="SiteNavigationElement">
+            <div class="container">
+                <h2 class="wb-inv">Menu</h2>
+                <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+                <ul role="menu" aria-orientation="vertical" data-ajax-replace="./MasterPages/themes-dist-6.0-gcweb/ajax/sitemenu-v5-<%=this.Language %>.html"></ul>
+            </div>
+        </nav>
+        <nav id="wb-bc" property="breadcrumb">
+            <h2><asp:Label ID="lblYouAreHere" meta:resourcekey="lblYouAreHere" runat="server"></asp:Label></h2>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="./default.aspx">Home</a></li>
+                </ol>
+            </div>
+        </nav>
         <main property="mainContentOfPage" class="container" typeof="WebPageElement">
             <section class="container">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
