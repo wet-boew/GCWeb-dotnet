@@ -117,34 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblAboutGovernment.Text" xml:space="preserve">
+  <data name="AboutGovernment" xml:space="preserve">
     <value>About government</value>
   </data>
-  <data name="lblAboutThisSite.Text" xml:space="preserve">
+  <data name="AboutThisSite" xml:space="preserve">
     <value>About this site</value>
   </data>
-  <data name="lblDateModified.Text" xml:space="preserve">
+  <data name="DateModified" xml:space="preserve">
     <value>Date modified:&amp;#32;</value>
   </data>
-  <data name="lblLanguageSelection.Text" xml:space="preserve">
-    <value>Language Selection</value>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
-  <data name="lblSearch.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="lblSearchCanada.Text" xml:space="preserve">
-    <value>Search Canada.ca</value>
-  </data>
-  <data name="lblTopOfPage.Text" xml:space="preserve">
-    <value>Top of Page&amp;#32;</value>
-  </data>
-  <data name="lblYouAreHere.Text" xml:space="preserve">
-    <value>You are here:</value>
-  </data>
-  <data name="lnkLanguage.Text" xml:space="preserve">
+  <data name="Language" xml:space="preserve">
     <value>Français</value>
   </data>
-  <data name="txtSearch.Placeholder" xml:space="preserve">
+  <data name="LanguageSelection" xml:space="preserve">
+    <value>Language Selection</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchCanada" xml:space="preserve">
     <value>Search Canada.ca</value>
+  </data>
+  <data name="SkipToAboutGovernment" xml:space="preserve">
+    <value>Skip to "About government"</value>
+  </data>
+  <data name="SkipToMainContent" xml:space="preserve">
+    <value>Skip to main content</value>
+  </data>
+  <data name="SymbolGovernmentCanada" xml:space="preserve">
+    <value>Symbol of the Government of Canada</value>
+  </data>
+  <data name="TopOfPage" xml:space="preserve">
+    <value>Top of Page&amp;#32;</value>
+  </data>
+  <data name="YouAreHere" xml:space="preserve">
+    <value>You are here:</value>
   </data>
 </root>
