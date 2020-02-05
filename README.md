@@ -1,4 +1,4 @@
-# .Net Application of GCWeb based on Web Experience Toolkit (WET)
+# GCWeb .Net Application based on Web Experience Toolkit (WET)
 
 C# Web Application to create custom government applications for internal, external and internet.
 
@@ -26,28 +26,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 -------------------------------------------------------------------
 
-# Application .Net de GCWeb basée sur la boîte à outils de l’expérience Web (BOEW)
+# Application .Net de GCWeb basÃ©e sur la boÃ®te Ã  outils de lâ€™expÃ©rience Web (BOEW)
 
-Application Web C # pour créer des applications gouvernementales personnalisées pour les applications internes, externes et Internet.
+Application Web C # pour crÃ©er des applications gouvernementales personnalisÃ©es pour les applications internes, externes et Internet.
 
-## Références
-* [Boîte à outils de l’expérience Web (BOEW)](https://github.com/wet-boew/wet-boew)
+## RÃ©fÃ©rences
+* [BoÃ®te Ã  outils de lâ€™expÃ©rience Web (BOEW)](https://github.com/wet-boew/wet-boew)
 * [GCWeb](https://github.com/wet-boew/GCWeb)
 
 ## Objectif principal
 
 * Standardisez les applications .net avec la norme gouvernementale.
-* Respectez la norme d'accessibilité et d'application Web réactive.
+* Respectez la norme d'accessibilitÃ© et d'application Web rÃ©active.
 * Offrir du contenu bilingue.
-* Permettre la collaboration pour l'évolution d'un modèle commun.
-* Facilitez la mise à jour du modèle en fonction des versions de GCWeb.
+* Permettre la collaboration pour l'Ã©volution d'un modÃ¨le commun.
+* Facilitez la mise Ã  jour du modÃ¨le en fonction des versions de GCWeb.
 
-## Développement futur
+## DÃ©veloppement futur
 
-Pour commencer, nous réalisons la version Web Form. Ensuite, nous concevrons la version MVC.
+Pour commencer, nous rÃ©alisons la version Web Form. Ensuite, nous concevrons la version MVC.
 
 ## Licence
 
 [![Licence](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-Ce projet est sous licence MIT - voir le fichier [Licence](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT - voir le fichier [Licence](LICENSE) pour plus de dÃ©tails.
