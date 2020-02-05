@@ -29,5 +29,12 @@ namespace GCWeb.WebForm.BaseConfig
             get { return this["defaultLanguage"] as string; }
             set { this["defaultLanguage"] = value; }
         }
+
+        [ConfigurationProperty("searchBarEnabled", IsRequired = false)]
+        public virtual bool SearchBarEnabled
+        {
+            get { return (this["searchBarEnabled"] as bool?) ?? false; }
+            set { this["searchBarEnabled"] = value; }
+        }
     }
 }

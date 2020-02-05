@@ -13,7 +13,10 @@ namespace GCWeb.WebForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                phSearchBar.Visible = SearchBarEnabled;
+            }
         }
 
         #region Public properties
@@ -40,6 +43,10 @@ namespace GCWeb.WebForm
         {
             get { return ((BaseConfig.BasePage)Page).Language; }
             set { ((BaseConfig.BasePage)Page).Language = value; }
+        }
+        public bool SearchBarEnabled
+        {
+            get { return ((BaseConfig.BasePage)Page).SearchBarEnabled; }
         }
         #endregion
 

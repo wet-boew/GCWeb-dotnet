@@ -89,6 +89,11 @@ namespace GCWeb.WebForm.BaseConfig
             }
             set { ViewState["PageDateModified"] = value; }
         }
+        public virtual bool SearchBarEnabled
+        {
+            get { return (ViewState["IsReviewing"] as bool?) ?? Config.SearchBarEnabled; }
+            set { ViewState["SearchBarEnabled"] = value; }
+        }
         #endregion
     }
 }

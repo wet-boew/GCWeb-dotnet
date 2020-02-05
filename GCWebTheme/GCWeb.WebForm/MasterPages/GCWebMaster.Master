@@ -71,20 +71,22 @@
                         <a href="https://www.canada.ca/<%=this.Language %>.html" property="url"><object type="image/svg+xml" data="./MasterPages/themes-dist-6.0-gcweb/GCWeb/assets/sig-blk-<%=this.Language %>.svg" role="img" tabindex="-1"></object><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
                         <meta property="areaServed" typeof="Country" content="Canada">
                     </div>
-                    <section id="wb-srch" class="col-lg-8 text-right">
-                        <h2><%=GetLocalResourceObject("SearchCanada")%></h2>
-                        <div class="form-inline">
-                            <div class="form-group">
-                                <label for="wb-srch-q" class="wb-inv"><%=GetLocalResourceObject("SearchCanada")%></label>
-                                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="<%=GetLocalResourceObject("SearchCanada")%>">
-                                <datalist id="wb-srch-q-ac">
-                                </datalist>
+                    <asp:PlaceHolder ID="phSearchBar" runat="server">
+                        <section id="wb-srch" class="col-lg-8 text-right">
+                            <h2><%=GetLocalResourceObject("SearchCanada")%></h2>
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="wb-srch-q" class="wb-inv"><%=GetLocalResourceObject("SearchCanada")%></label>
+                                    <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="<%=GetLocalResourceObject("SearchCanada")%>">
+                                    <datalist id="wb-srch-q-ac">
+                                    </datalist>
+                                </div>
+                                <div class="form-group submit">
+                                    <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv"><%=GetLocalResourceObject("Search")%></span></button>
+                                </div>
                             </div>
-                            <div class="form-group submit">
-                                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv"><%=GetLocalResourceObject("Search")%></span></button>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </asp:PlaceHolder>
                 </div>
             </div>
         </header>
