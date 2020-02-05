@@ -99,7 +99,7 @@
             <h2><%=GetLocalResourceObject("YouAreHere")%></h2>
             <div class="container">
                 <ol class="breadcrumb">
-                    <li><a href="./default.aspx"><%=GetLocalResourceObject("Home")%></a></li>
+                    <asp:SiteMapPath ID="smPath" SiteMapProvider="BreadCrumbSitemapProvider" runat="server" RenderCurrentNodeAsLink="true"></asp:SiteMapPath>
                 </ol>
             </div>
         </nav>

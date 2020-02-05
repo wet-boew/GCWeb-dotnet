@@ -4730,16 +4730,6 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\Global.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\Global.fr.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Global.fr.resx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="BaseConfig\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -4769,11 +4759,8 @@
     <Content Include="MasterPages\App_LocalResources\GCWebMaster.Master.resx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App_GlobalResources\Global.fr.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Global.fr.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <Content Include="App_GlobalResources\BreadCrumb.sitemap.resx" />
+    <Content Include="App_GlobalResources\BreadCrumb.sitemap.fr.resx" />
     <None Include="packages.config" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\demos\data-json\demo\data-en.json" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\demos\data-json\demo\data-fr.json" />
@@ -5052,6 +5039,7 @@
     <Content Include="MasterPages\themes-dist-6.0-gcweb\wet-boew\js\polyfills\test.min.js.map" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\wet-boew\js\wet-boew.min.js.map" />
     <Content Include="MasterPages\themes-dist-6.0-gcweb\wet-boew\payload.json" />
+    <Content Include="SiteMaps\BreadCrumb.sitemap" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5062,12 +5050,7 @@
   <ItemGroup>
     <Content Include="MasterPages\App_LocalResources\GCWebMaster.Master.fr.resx" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\Global.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Global.Designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
